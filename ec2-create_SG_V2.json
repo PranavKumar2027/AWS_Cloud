@@ -1,0 +1,65 @@
+{
+  "Resources": {
+    "SimpleEc2Instance": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-00c8ac9147e19828e",
+        "InstanceType": "t3.micro",
+        "SecurityGroups": [
+          {
+            "Ref": "InstanceSecurityGroup"
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "PranavEc2Instance"
+          }
+        ],
+        "UserData": {
+          "Fn::Base64": {
+            "Fn::Sub": "#!/bin/bash\n\
+yum update -y\n\
+yum install -y nginx\n\
+systemctl start nginx\n\
+systemctl enable nginx\n\
+\n\
+cat <<'EOF' > /usr/share/nginx/html/index.html\n\
+<html>\n\
+<head>\n\
+  <title>Welcome to nginx on Aws</title>\n\
+</head>\n\
+<body style=\"background-color:red\">\n\
+  <h1>Sample WEBPAGE Using CloudFormation</h1>\n\
+  <p>This Webpage is done using Nginx on EC2 Instance</p>\n\
+</body>\n\
+</html>\n\
+EOF"
+          }
+        }
+      }
+    },
+    "InstanceSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "Enable HTTP Access",
+        "SecurityGroupIngress": [
+          {
+            "IpProtocol": "tcp",
+            "FromPort": 80,
+            "ToPort": 80,
+            "CidrIp": "0.0.0.0/0" #Allows HTTP Access from Anywhere (use with caution
+          }
+        ]
+      }
+    },
+    "ElasticIP": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "InstanceId": {
+          "Ref": "SimpleEc2Instance"
+        }
+      }
+    }
+  }
+}
