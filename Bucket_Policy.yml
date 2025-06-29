@@ -1,0 +1,23 @@
+// Write by Cloud FrontCDN when we created a Distrintion 
+Hosted Link : https://d1tte7nnz2nusc.cloudfront.net
+
+{
+    "Version": "2008-10-17",
+    "Id": "PolicyForCloudFrontPrivateContent",
+    "Statement": [
+        {
+            "Sid": "AllowCloudFrontServicePrincipal",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudfront.amazonaws.com"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::mybucket-30-06-2025/*",
+            "Condition": {
+                "ArnLike": {
+                    "AWS:SourceArn": "arn:aws:cloudfront::041683371691:distribution/E3ITWQE0W4M4RB"
+                }
+            }
+        }
+    ]
+}
