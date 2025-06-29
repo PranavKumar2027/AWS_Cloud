@@ -1,3 +1,4 @@
+// Developed by Pranav
 Resources:
   SimpleEC2Instance:
     Type: "AWS::EC2::Instance"
