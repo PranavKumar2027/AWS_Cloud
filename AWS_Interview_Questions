@@ -1,0 +1,63 @@
+Smart pointers in c++, Write your own shared pointer class, IPC, Read and write on a file using synchronization , Write your own String Class implementing operator overloading functionalities.
+
+
+complete architecture of microservices design and development.
+
+C++ STL based questions - Copy constructor - override keyword. - Few more questions around these lines.
+
+What is Virtual functions. 5. How do we create object different ways of derived class in C++, what is the difference between those. ? 6. How do you create a class which has object of another class ? 7. Engine <- Car what does above representation mean ? 8. When do you go for containment and when do you go for inheritance ? 9. How do you write or represent in class form, if I want to write linked list implementation in C# ?
+
+ what is abstract class?
+ 
+The further round included questions on Design principles SOLID and general practices.
+
+ Some questions around array problems Linq and its workings Find a suitable efficient approach while using Array manipulation
+ 
+given two strings , find if one different from another using one char add/replace/remove how you can implement chess game how to implement phone number by searching prefixes
+
+ Write code to find a sub-string from the string. Code to find duplicate values is the array(number could be of any length).Code to get factorial of very huge number.
+ 
+Write a C function to match a sub string with each letter in sequence, but with any number of characters in between
+
+OS primitives, - multi threading, synchronization and memory management. - little detailed knowledge on Algorithms and progrmming language constructs like apis, special features. - design principles
+
+tower of hanoi
+
+mechanism of deadlock resolution in vxworks
+
+emphasis was more on threading and data structure .
+
+Singleton Pattern
+
+Develop a program like notepad (on paper)
+
+https://www.geeksforgeeks.org/dsa/find-the-missing-number/
+
+https://www.programmerinterview.com/puzzles/2-eggs-100-floors-puzzle/
+
+
+https://www.naukri.com/code360/interview-experiences/philips/philips-interview-experience-by-pratham-gupta-on-campus-dec-2021
+
+https://www.naukri.com/code360/interview-experiences/philips/philips-interview-experience-senior-software-engineer-may-2021-exp-0-2-years
+
+How do we measure forty-five minutes using two identical wires, each of which takes an hour to burn? We have matchsticks with us. The wires burn non-uniformly. So, for example, the two halves of wire might burn in 10 minutes and 50 minutes respectively
+
+https://www.naukri.com/code360/interview-experiences/amazon/amazon-interview-experience-jul-2020-exp-0-2-years?testVariant=0
+
+https://www.geeksforgeeks.org/cloud-computing/aws-interview-questions/
+
+https://www.datacamp.com/blog/top-aws-interview-questions-and-answers
+
+https://www.interviewbit.com/aws-interview-questions/?sign_up_medium=ib_article_auth_blocker/
+
+https://www.netcomlearning.com/blog/aws-interview-questions
+
+
+https://razorops.com/blog/top-50-cloud-engineer-interview-questions-and-answers/
+
+https://www.youtube.com/watch?v=ULiPYBLcCiw
+
+https://cloudchamp.notion.site/AWS-Interview-questions-with-Answers-9f1f6740fc154c93b14d1fa77c7e86d6
+
+https://www.youtube.com/@LogicOpsLab/videos
+
